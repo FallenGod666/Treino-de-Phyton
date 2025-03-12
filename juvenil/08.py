@@ -1,0 +1,7 @@
+metros=float(input('Digite um valor em Metros: '))
+print()
+print(f'Esse valor de {metros} em distância corresponde a:')
+print(f'{metros/1000} Metros')
+print(f'{metros/100} Hectômetros')
+print(f'{metros/10} Decâmetro')
+print(f'{metros/0.1} Decímetro')
