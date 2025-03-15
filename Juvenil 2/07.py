@@ -1,5 +1,6 @@
 # Cadastro de pessoas
 
+import os
 cadastros = []
 
 while True:
@@ -14,9 +15,11 @@ while True:
         sexo = input("Sexo (M/F): ")
         cadastro = {"Nome": nome, "Idade": idade, "Sexo": sexo}
         cadastros.append(cadastro)
+        print('\n' * 100)
         print("Cadastro adicionado com sucesso!")
 
     elif opcao == "2":
+        print('\n' * 100)
         print("\nLista de Cadastros:")
         for i, pessoa in enumerate(cadastros, start=1):
             print(f"{i}. Nome: {pessoa['Nome']}, Idade: {pessoa['Idade']}, Sexo: {pessoa['Sexo']}")
